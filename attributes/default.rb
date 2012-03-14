@@ -31,6 +31,6 @@ default[:ssh_tunnel][:list] = [
 some pem-encoded data
 -----END RSA PRIVATE KEY-----"
     },
-	:action => 'start'
+	:action => 'restart'
   }
 ]
