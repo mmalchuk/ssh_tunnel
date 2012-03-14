@@ -77,6 +77,9 @@ node[:ssh_tunnel][:list].each do |tun|
 
 			if tun[:action] == 'start'
 				action [ :start ]
+			elseif tun[:action] == 'restart'
+				action [ :stop ]
+				action [ :start ]
 			else
 				action [ :stop ]
 			end
